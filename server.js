@@ -16,6 +16,7 @@ mongoose.connect('mongodb://localhost:27017/sandbox', { useNewUrlParser: true })
 
 // Express
 const app = express()
+app.set('view engine', 'pug')
 
 // Apollo Server
 const server = new ApolloServer({
