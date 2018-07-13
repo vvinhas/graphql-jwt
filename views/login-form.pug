@@ -1,0 +1,14 @@
+extends template.pug
+
+block content
+  #login-form
+    form(method='POST', action='/login')
+      .form-group
+        label Usuário
+        input.form-control(type="text", name="username")
+
+      .form-group
+        label Senha
+        input.form-control(type="password", name="password")
+      
+      button.btn.btn-primary(type="submit") Login
